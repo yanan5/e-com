@@ -11,13 +11,13 @@ export default ({ radioIconColor, radioIconSize, ...rest }) => (
     checkedIcon={
       <RadioButtonCheckedIcon
         style={{ fill: radioIconColor || "#FFF" }}
-        fontSize={radioIconSize || "default"}
+        fontSize="default"
       />
     }
     icon={
       <Brightness1Icon
         style={{ fill: radioIconColor || "#FFF" }}
-        fontSize={radioIconSize || "default"}
+        fontSize="default"
       />
     }
     {...rest}

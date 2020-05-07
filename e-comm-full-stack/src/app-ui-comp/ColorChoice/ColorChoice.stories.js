@@ -17,7 +17,13 @@ const colors = [
   "#9013FE",
 ];
 const defaultColor = "#F62F5E"
-export const AllWhite = () => (
+export const WithoutDefaultSelection = () => (
+  <ColorChoice
+    colors={colors}
+    onChange={action("onChange")}
+  />
+);
+export const WithDefaultSelected = () => (
   <ColorChoice
     colors={colors}
     onChange={action("onChange")}

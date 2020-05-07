@@ -1,0 +1,7 @@
+.MuiBox-root.sizeSelect {
+  display: flex;
+  flex-flow: wrap;
+}
+.MuiBox-root.sizeSelect .size:last-child {
+  margin-right: 0;
+}
