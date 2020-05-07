@@ -4,12 +4,12 @@ import FormControl from "@material-ui/core/FormControl";
 import FormLabel from "@material-ui/core/FormLabel";
 import RadioFilled from "../../base-ui-comp";
 
-export default function ColorChoice({colors, defaultColor = ''}) {
+export default function ColorChoice({colors, defaultColor = '', onChange}) {
   const [value, setValue] = useState(defaultColor);
 
   const handleChange = (event) => {
     setValue(event.target.value);
-    console.log(event.target.value);
+    onChange(event.target.value);
   };
 
   return (
@@ -24,7 +24,7 @@ export default function ColorChoice({colors, defaultColor = ''}) {
       >
         {colors &&
           colors.map((color) => (
-            <RadioFilled key={color} radioIconColor={color} value={color} />
+            <RadioFilled p={1} key={color} radioIconColor={color} value={color} />
           ))}
       </RadioGroup>
     </FormControl>
