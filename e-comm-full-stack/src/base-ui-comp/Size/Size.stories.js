@@ -1,10 +1,12 @@
 import React from "react";
 import { action } from "@storybook/addon-actions";
+import { withKnobs, boolean } from "@storybook/addon-knobs";
 import Size from "./index";
 
 export default {
   title: "BASE-UI-COMP/Size",
   component: Size,
+  decorators: [withKnobs]
 };
 
 export const WithoutSelection = () => (
@@ -15,5 +17,5 @@ export const WithSelection = () => (
   
 );
 export const WithClick = () => (
-  <Size onClick={action("Size Clicked")} size="XXXL" />
+  <Size onClick={action("Size Clicked")} size="XXXL" selected={boolean("selected", false)}/>
 );

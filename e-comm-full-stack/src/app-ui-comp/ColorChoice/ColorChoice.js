@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import RadioGroup from "@material-ui/core/RadioGroup";
 import FormControl from "@material-ui/core/FormControl";
 import FormLabel from "@material-ui/core/FormLabel";
-import RadioFilled from "../../base-ui-comp";
+import {RadioFilled} from "../../base-ui-comp";
 
 export default function ColorChoice({colors, defaultColor = '', onChange}) {
   const [value, setValue] = useState(defaultColor);
@@ -24,7 +24,7 @@ export default function ColorChoice({colors, defaultColor = '', onChange}) {
       >
         {colors &&
           colors.map((color) => (
-            <RadioFilled p={1} key={color} radioIconColor={color} value={color} />
+            <RadioFilled key={color} radioIconColor={color} value={color} />
           ))}
       </RadioGroup>
     </FormControl>
