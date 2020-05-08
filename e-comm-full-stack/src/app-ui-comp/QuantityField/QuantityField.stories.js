@@ -3,7 +3,7 @@ import { action } from "@storybook/addon-actions";
 import QuantityField from "./index";
 
 export default {
-  title: "BASE-UI-COMP/QuantityField",
+  title: "APP-UI-COMP/QuantityField",
   component: QuantityField
 }
 
