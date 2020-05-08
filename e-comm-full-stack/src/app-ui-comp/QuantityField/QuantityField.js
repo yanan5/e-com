@@ -28,8 +28,8 @@ export default React.memo(
     };
     return (
       <Box className="quantityField">
-        <IconButton>
-          <RemoveIcon fontSize="large" onClick={handleQtyChange("minus")} />
+        <IconButton onClick={handleQtyChange("minus")}>
+          <RemoveIcon fontSize="large" />
         </IconButton>
         <TextField
           type="number"
@@ -38,8 +38,8 @@ export default React.memo(
           onChange={handleQtyChange("num-change")}
           {...rest}
         />
-        <IconButton>
-          <AddIcon fontSize="large" onClick={handleQtyChange("plus")} />
+        <IconButton onClick={handleQtyChange("plus")}>
+          <AddIcon fontSize="large" />
         </IconButton>
       </Box>
     );
