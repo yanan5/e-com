@@ -1,9 +1,10 @@
+import PropTypes from "prop-types";
 import React from "react";
 import Button from "@material-ui/core/Button";
 import classNames from "classnames";
 import "./Size.css";
 
-export default React.memo(({ selected, size, onClick = () => {}, ...rest }) => (
+const Size = React.memo(({ selected, size, onClick = () => {}, ...rest }) => (
   <Button
     variant="contained"
     component="div"
@@ -15,3 +16,16 @@ export default React.memo(({ selected, size, onClick = () => {}, ...rest }) => (
     <span>{size}</span>
   </Button>
 ));
+
+Size.defaultProps = {
+  onClick: () => {},
+  selected: false,
+  size: "",
+};
+Size.propTypes = {
+  onClick: PropTypes.func,
+  selected: PropTypes.bool,
+  size: PropTypes.string,
+};
+
+export default Size;
