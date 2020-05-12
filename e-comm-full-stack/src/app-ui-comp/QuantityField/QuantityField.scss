@@ -1,0 +1,38 @@
+/* Chrome, Safari, Edge, Opera */
+.quantityField input::-webkit-outer-spin-button,
+.quantityField input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.quantityField input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.quantityField {
+  .MuiTextField-root {
+    margin: 0 10px;
+    .MuiInputBase-input {
+      padding: 0;
+      width: 4em;
+      height: 3em;
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+  .MuiOutlinedInput-notchedOutline {
+    border-radius: 40%;
+  }
+  .MuiIconButton-root {
+    padding: 0;
+  }
+  .MuiSvgIcon-fontSizeLarge {
+    padding: 6px;
+  }
+  .MuiSvgIcon-root {
+    color: #2f2f2f;
+    background: #efefef;
+    border-radius: 50%;
+  }
+}

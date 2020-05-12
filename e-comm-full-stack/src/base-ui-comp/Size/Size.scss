@@ -1,0 +1,36 @@
+.MuiButtonBase-root {
+  &.size {
+    width: 5rem;
+    height: 2rem;
+    border-radius: 2px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 10px 0 0;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &.selected {
+      background-color: #f62f5e;
+      span {
+        color: #fff;
+      }
+    }
+
+    span {
+      font-size: 16px;
+      text-transform: capitalize;
+      color: #6c6c6c;
+    }
+  }
+}
+.MuiButton-contained {
+  .size {
+    background-color: #efefef;
+  }
+}

@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from "react";
 import { Size } from "../../base-ui-comp";
 import Box from "@material-ui/core/Box";
-import "./SizeSelect.css";
+import "./SizeSelect.scss";
 
 export default function SizeSelect({ sizes, selectedSize = "", onClick }) {
   const [sizeSelected, setSize] = useState(selectedSize);

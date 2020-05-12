@@ -8,7 +8,7 @@ import IconButton from "@material-ui/core/IconButton";
 import FormControl from "@material-ui/core/FormControl";
 import Typography from "@material-ui/core/Typography";
 
-import "./InputPagination.css";
+import "./InputPagination.scss";
 
 export default React.memo(
   ({ currentPageNo = 1, totalPages = 1, onPageChange = () => {} }) => {
@@ -49,7 +49,7 @@ export default React.memo(
     return (
       <Box className="inputPagination">
         <Typography component="span">Page</Typography>
-        <FormControl variant="outlined">
+        <FormControl variant="outlined" className="pageNumSelect">
           <Select
             value={pageNo}
             onChange={handlePaginationChange("select-change")}
@@ -58,7 +58,7 @@ export default React.memo(
           </Select>
         </FormControl>
         <Typography component="span">of {totalPages}</Typography>
-        <IconButton onClick={handlePaginationChange("minus")}>
+        <IconButton onClick={handlePaginationChange("minus")} className="minus">
           <KeyboardArrowLeftIcon fontSize="large" />
         </IconButton>
         <IconButton onClick={handlePaginationChange("plus")}>

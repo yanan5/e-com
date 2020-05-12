@@ -1,0 +1,23 @@
+.inputPagination {
+  .minus,
+  .pageNumSelect {
+    margin: 0 10px;
+  }
+  &.MuiBox-root {
+    display: flex;
+    align-items: center;
+  }
+  .MuiOutlinedInput-input {
+    padding: 8.5px 14px;
+  }
+  .MuiIconButton-root {
+    padding: 0;
+  }
+  .MuiButtonBase-root {
+    .MuiSvgIcon-root {
+      color: #2f2f2f;
+      background: #efefef;
+      border-radius: 50%;
+    }
+  }
+}

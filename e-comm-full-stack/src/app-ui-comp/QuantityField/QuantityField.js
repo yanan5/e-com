@@ -4,7 +4,7 @@ import TextField from "@material-ui/core/TextField";
 import IconButton from "@material-ui/core/IconButton";
 import AddIcon from "@material-ui/icons/Add";
 import RemoveIcon from "@material-ui/icons/Remove";
-import "./QuantityField.css";
+import "./QuantityField.scss";
 
 export default React.memo(
   ({ existingQty = 0, onQtyChange = () => {}, ...rest }) => {
