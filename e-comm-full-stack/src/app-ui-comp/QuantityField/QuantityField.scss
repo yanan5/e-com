@@ -12,6 +12,18 @@
 .quantityField input[type="number"] {
   -moz-appearance: textfield;
 }
+.quantityWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (min-width: 980px) {
+  .quantityWrapper {
+    justify-content: initial;
+    align-items: initial;
+  }
+}
 
 .quantityField {
   .MuiTextField-root {

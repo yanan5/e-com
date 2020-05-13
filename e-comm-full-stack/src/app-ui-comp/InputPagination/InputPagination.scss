@@ -9,6 +9,12 @@
   &.MuiBox-root {
     display: flex;
     align-items: center;
+    justify-content: center;
+  }
+  @media (min-width: 980px) {
+    &.MuiBox-root {
+      justify-content: initial;
+    }
   }
   .MuiOutlinedInput-input {
     padding: 8.5px 14px;

@@ -1,7 +1,22 @@
-.MuiBox-root.sizeSelect {
-  display: flex;
-  flex-flow: wrap;
-}
-.MuiBox-root.sizeSelect .size:last-child {
-  margin-right: 0;
+.MuiBox-root {
+  &.sizeSelect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @media (min-width: 980px) {
+      align-items: initial;
+      justify-content: initial;
+    }
+    .sizeWrapper {
+      display: flex;
+      flex-flow: wrap;
+      align-items: center;
+      justify-content: center;
+      @media (min-width: 980px) {
+        align-items: initial;
+        justify-content: initial;
+      }
+    }
+  }
 }

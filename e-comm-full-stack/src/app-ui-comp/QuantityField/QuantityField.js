@@ -3,6 +3,7 @@ import Box from "@material-ui/core/Box";
 import TextField from "@material-ui/core/TextField";
 import IconButton from "@material-ui/core/IconButton";
 import AddIcon from "@material-ui/icons/Add";
+import FormLabel from "@material-ui/core/FormLabel";
 import RemoveIcon from "@material-ui/icons/Remove";
 import "./QuantityField.scss";
 
@@ -27,20 +28,23 @@ export default React.memo(
       onQtyChange(value);
     };
     return (
-      <Box className="quantityField">
-        <IconButton onClick={handleQtyChange("minus")}>
-          <RemoveIcon fontSize="large" />
-        </IconButton>
-        <TextField
-          type="number"
-          variant="outlined"
-          value={qty}
-          onChange={handleQtyChange("num-change")}
-          {...rest}
-        />
-        <IconButton onClick={handleQtyChange("plus")}>
-          <AddIcon fontSize="large" />
-        </IconButton>
+      <Box className="quantityWrapper">
+        <FormLabel>Quantity</FormLabel>
+        <Box className="quantityField">
+          <IconButton onClick={handleQtyChange("minus")}>
+            <RemoveIcon fontSize="large" />
+          </IconButton>
+          <TextField
+            type="number"
+            variant="outlined"
+            value={qty}
+            onChange={handleQtyChange("num-change")}
+            {...rest}
+          />
+          <IconButton onClick={handleQtyChange("plus")}>
+            <AddIcon fontSize="large" />
+          </IconButton>
+        </Box>
       </Box>
     );
   }
