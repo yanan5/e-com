@@ -1,11 +1,13 @@
 import React from "react";
-import { withKnobs, boolean, color } from "@storybook/addon-knobs";
+import { withKnobs, color, text } from "@storybook/addon-knobs";
 import ColorLabel from "./index";
 
 export default {
-  title: "../ColorLabel",
+  title: "BASE-UI-COMP/ColorLabel",
   component: ColorLabel,
-  decorators: [withKnobs]
+  decorators: [withKnobs],
 };
 
-export const Default = () => <ColorLabel />
+export const Default = () => (
+  <ColorLabel color={color("labelColor", "#00D3CA")} name={text("labelText", "TEST")} />
+);

@@ -1,0 +1,10 @@
+@import "../../ui-styles/_variables";
+@import "../../ui-styles/_placeholders";
+
+.MuiFormLabel-root {
+  &.colorLabel {
+    @extend %label;
+    background-color: $doc-black;
+    font-weight: bold;
+  }
+}

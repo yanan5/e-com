@@ -5,3 +5,14 @@
   background: $icon_background;
   border-radius: 50%;
 }
+%label {
+  width: 5rem;
+  height: 2rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 10px 0 0;
+  color: $typo-white;
+  text-transform: uppercase;
+}

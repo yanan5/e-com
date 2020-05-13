@@ -1,16 +1,10 @@
-@import "../../ui-styles/variables";
+@import "../../ui-styles/_variables";
+@import "../../ui-styles/_placeholders";
 
 .MuiButtonBase-root {
   &.size {
-    width: 5rem;
-    height: 2rem;
+    @extend %label;
     border-radius: 2px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px 10px 0 0;
-    color: $typo-white;
     cursor: pointer;
 
     &:hover {
