@@ -1,4 +1,5 @@
 @import "../../ui-styles/variables";
+@import "../../ui-styles/placeholders";
 
 /* Chrome, Safari, Edge, Opera */
 .quantityField input::-webkit-outer-spin-button,
@@ -33,8 +34,6 @@
     padding: 6px;
   }
   .MuiSvgIcon-root {
-    color: $icon_color;
-    background: $icon_background;
-    border-radius: 50%;
+    @extend %svg_icon_root;
   }
 }
