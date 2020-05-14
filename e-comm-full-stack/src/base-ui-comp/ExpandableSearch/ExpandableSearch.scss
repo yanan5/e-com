@@ -1,56 +1,25 @@
-
-input {
-	outline: none;
-}
-input[type=search] {
-	-webkit-appearance: textfield;
-	-webkit-box-sizing: content-box;
-	font-family: inherit;
-	font-size: 100%;
-}
-input::-webkit-search-decoration,
-input::-webkit-search-cancel-button {
-	padding: 0 10px 0 0; 
-  display: none;
-}
-
-
-input[type=search] {
-  display: block;
-  margin: 0 0 0 auto;
-	border: solid 1px #ccc;
-	padding: 9px 10px 9px 32px;
-	width: 55px;
-	margin: 0 0 0 auto;
-	-webkit-border-radius: 10em;
-	-moz-border-radius: 10em;
-	border-radius: 10em;
-	
-	-webkit-transition: all .5s;
-	-moz-transition: all .5s;
-	transition: all .5s;
-}
-input[type=search]:focus {
-	width: 130px;
-	background-color: #fff;
-	border-color: #66CC75;
-	
-	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
-	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
-	box-shadow: 0 0 5px rgba(109,207,246,.5);
-}
-
-
-input:-moz-placeholder {
-	color: #999;
-}
-input::-webkit-input-placeholder {
-	color: #999;
-}
-
- input[type=search] {
-	width: 15px;
-	padding-left: 32px;
-	color: transparent;
-	cursor: pointer;
+.expandableSearch {
+	position: relative;
+	.MuiIconButton-root {
+		position: absolute;
+		z-index: 1001;
+	}
+  .MuiOutlinedInput-root {
+		border-radius: 15px;
+		.MuiOutlinedInput-notchedOutline {
+			border-width: 0;
+			transition: all 0.5s;
+		}
+  }
+  .MuiOutlinedInput-input {
+		width: 0;		
+		padding: 14.5px 14px 14.5px 50px;
+    transition: all 0.5s;
+    &:focus {
+			width: 15rem;			
+			+.MuiOutlinedInput-notchedOutline {
+				border-width: 1px;
+			}
+    }
+  }
 }
