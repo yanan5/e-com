@@ -1,0 +1,25 @@
+@import "../../ui-styles/variables";
+@import "../../ui-styles/mixins";
+
+.AppBar {
+  &.grow {
+    flex-grow: 1;
+  }
+  .menuButton {
+    margin: 0;
+  }
+  .title {
+    font-family: map-get($font-family, "Montserrat"), serif;
+    font-size: map-get($font-size, "H2");
+    font-weight: bold;
+    color: $typo-white;
+    line-height: map-get($line-height, "150");
+    letter-spacing: 10px;
+  }
+  .inputRoot {
+    color: "inherit";
+  }
+  .inputInput {
+    width: "100%";
+  }
+}

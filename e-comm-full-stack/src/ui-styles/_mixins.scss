@@ -5,14 +5,18 @@
   background: $icon_background;
   border-radius: 50%;
 };
-@mixin label {
-  width: 5rem;
-  height: 2rem;
-  text-align: center;
+@mixin center_align { 
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@mixin label {
+  width: 5rem;
+  height: 2rem;
+  text-align: center;  
   margin: 10px 0 0 10px;
   color: $typo-white;
   text-transform: uppercase;
+  @include center_align;
 };
