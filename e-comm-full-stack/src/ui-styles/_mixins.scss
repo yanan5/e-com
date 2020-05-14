@@ -1,11 +1,11 @@
-@import "./_variables";
+@use "./variables" as *;
 
-%svg_icon_root {
+@mixin svg_icon_root {
   color: $icon_color;
   background: $icon_background;
   border-radius: 50%;
-}
-%label {
+};
+@mixin label {
   width: 5rem;
   height: 2rem;
   text-align: center;
@@ -15,4 +15,4 @@
   margin: 10px 0 0 10px;
   color: $typo-white;
   text-transform: uppercase;
-}
+};

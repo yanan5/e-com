@@ -1,9 +1,9 @@
-@import "../../ui-styles/_variables";
-@import "../../ui-styles/_placeholders";
+@import "../../ui-styles/variables";
+@import "../../ui-styles/mixins";
 
 .MuiButtonBase-root {
   &.size {
-    @extend %label;
+    @include label;
     border-radius: 2px;
     cursor: pointer;
 

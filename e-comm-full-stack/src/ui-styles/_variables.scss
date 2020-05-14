@@ -16,3 +16,23 @@ $size-background: #EFEFEF;
 
 $icon_color: #2F2F2F;
 $icon_background: $size-background;
+
+// maps
+$font-family: (
+  "playFair": 'Playfair Display',
+  "montserrat": 'Montserrat',
+  "opensans": 'Open Sans'
+);
+$font-size: (
+  "H1": 48px,
+  "H2": 24px,
+  "H3": 16px,
+  "Topbar": 15px,
+  "Bodynormal": 16px,
+  "Bodysmall": 12px
+);
+$line-height: (
+  "150": 150%,
+  "240": 240%,
+  "200": 200%
+);

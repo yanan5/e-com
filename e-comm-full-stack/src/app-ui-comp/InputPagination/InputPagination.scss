@@ -1,5 +1,5 @@
 @import "../../ui-styles/variables";
-@import "../../ui-styles/placeholders";
+@import "../../ui-styles/mixins";
 
 .inputPagination {
   .minus,
@@ -24,7 +24,7 @@
   }
   .MuiButtonBase-root {
     .MuiSvgIcon-root {
-      @extend %svg_icon_root;
+      @include svg_icon_root;
     }
   }
 }

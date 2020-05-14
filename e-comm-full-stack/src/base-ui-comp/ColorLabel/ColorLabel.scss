@@ -1,9 +1,9 @@
-@import "../../ui-styles/_variables";
-@import "../../ui-styles/_placeholders";
+@import "../../ui-styles/variables";
+@import "../../ui-styles/mixins";
 
 .MuiFormLabel-root {
   &.colorLabel {
-    @extend %label;
+    @include label;
     background-color: $doc-black;
     font-weight: bold;
   }

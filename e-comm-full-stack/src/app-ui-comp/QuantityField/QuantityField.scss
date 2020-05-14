@@ -1,5 +1,5 @@
 @import "../../ui-styles/variables";
-@import "../../ui-styles/placeholders";
+@import "../../ui-styles/mixins";
 
 /* Chrome, Safari, Edge, Opera */
 .quantityField input::-webkit-outer-spin-button,
@@ -46,6 +46,6 @@
     padding: 6px;
   }
   .MuiSvgIcon-root {
-    @extend %svg_icon_root;
+    @include svg_icon_root;
   }
 }
