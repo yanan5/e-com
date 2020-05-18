@@ -2,11 +2,14 @@
 @import "../../ui-styles/mixins";
 
 .AppBar {
+  .MuiAppBar-colorPrimary {
+    background-color: $doc-red;
+  }
   &.grow {
     flex-grow: 1;
   }
   .menuButton {
-    margin: 0;
+    // margin: 0 0 0 auto;
   }
   .title {
     font-family: map-get($font-family, "Montserrat"), serif;
@@ -14,12 +17,66 @@
     font-weight: bold;
     color: $typo-white;
     line-height: map-get($line-height, "150");
-    letter-spacing: 10px;
+    letter-spacing: 5px;
   }
-  .inputRoot {
-    color: "inherit";
+  .mainNav {
+    width: 40%;
+    > ul {
+      @include center_align;
+      justify-content: space-evenly;
+      > li {
+        list-style-type: none;
+      }
+    }
+    > ul,
+    > li {
+      margin: 0;
+      padding: 0;
+    }
+
+    .MuiButton-root {
+      color: $typo-white;
+      text-transform: capitalize;
+      font-weight: bold;
+    }
   }
-  .inputInput {
-    width: "100%";
+  .expandableSearchWrapper {
+    display: flex;
+    margin: 0 0 0 auto;
+  }
+  .MuiIconButton-edgeEnd {
+    margin-right: 0;
+  }
+  .mega-menu {
+    .arrow-up {
+      width: 0;
+      height: 0;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+
+      border-bottom: 15px solid $doc-grey;
+      position: absolute;
+      top: -15px;
+      left: 270px;
+    }
+    ul {
+      margin: 1em 0;
+    }
+    li {
+      list-style-type: none;
+      &:first-child {
+        font-weight: bold;
+        color: $typo-black;
+        padding-bottom: 10px;
+      }
+    }
+    background-color: $doc-grey;
+    color: $typo-light-grey;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 64px;
+    display: flex;
+    transition: all 0.5s;
   }
 }
